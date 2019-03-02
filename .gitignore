@@ -3,5 +3,4 @@ nlp
 .idea
 out/
 .gradle
-gradle/
 build/
