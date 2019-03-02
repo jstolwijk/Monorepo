@@ -6,6 +6,9 @@ plugins {
 group 'raspberry'
 version '1.0-SNAPSHOT'
 
+apply plugin:'application'
+mainClassName = "org.jessestolwijk.raspberry.MainKt"
+
 sourceCompatibility = 1.8
 
 repositories {
