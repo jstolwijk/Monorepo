@@ -1,1 +1,6 @@
 nlp
+
+.idea
+out
+.gradle
+gradle
