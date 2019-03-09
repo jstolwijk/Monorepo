@@ -1,0 +1,5 @@
+rootProject.name = 'lolprojects'
+
+include('probuilds')
+include('ddragon-model')
+include('lol')

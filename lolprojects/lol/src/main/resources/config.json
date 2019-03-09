@@ -1,0 +1,8 @@
+{
+  "modelPackage": "org.jessestolwijk.riot.lol",
+  "library": "jersey2",
+  "useRuntimeException": true,
+  "hideGenerationTimestamp": true,
+  "dateLibrary": "java8",
+  "java8": true
+}
