@@ -32,7 +32,7 @@ dependencies {
     compile(ktor("client-json"))
     compile(ktor("client-logging"))
 
-    compile(project(":lol"))
+    compile(project(":riot-api-model"))
     compile(project(":ddragon-model"))
 
     implementation("org.slf4j:slf4j-simple:1.6.1")
