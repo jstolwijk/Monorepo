@@ -1,0 +1,15 @@
+{
+  "name": "electron-playground",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "tsc && electron ./dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "4.0.7",
+    "typescript": "3.3.3333"
+  }
+}
