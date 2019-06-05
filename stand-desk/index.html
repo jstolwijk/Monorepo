@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Context Menu</title>
+  </head>
+  <body style="width: 100%; height: 100%;">
+    <p>'Right click' to show context menu.</p>
+
+    <script>
+      console.log("Requesting Bluetooth Device...");
+
+      navigator.bluetooth
+        .requestDevice({ acceptAllDevices: true })
+        .then(async device => {
+          console.log("> Name:             " + device.name);
+          console.log("> Id:               " + device.id);
+          console.log(
+            "> Initially, connected?        " + device.gatt.connected
+          );
+          await device.gatt.connect();
+          console.log("> Now, connected?        " + device.gatt.connected);
+
+          console.log(JSON.stringify(device));
+        })
+        .catch(error => {
+          console.log("Argh! " + error);
+        });
+    </script>
+  </body>
+</html>

@@ -4,3 +4,6 @@ nlp
 out/
 .gradle
 build/
+random-wallpaper/
+target
+*.mp4

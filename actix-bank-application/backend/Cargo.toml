@@ -1,0 +1,31 @@
+[package]
+name = "actix-server"
+version = "0.1.0"
+authors = ["Jesse Stolwijk <stolwijkjesse@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "1.0.0-alpha.4"
+actix-service = "0.3.6"
+futures = "0.1.26"
+
+log = "0.4.0"
+env_logger = "0.6.1"
+uuid = { version = "0.7.4", features = ["serde", "v4"] }
+
+# Serde
+serde = "1.0.90"
+serde_json = "1.0.39"
+serde_derive = "1.0.90"
+bcrypt = "0.4.0"
+
+# Validation
+validator = "0.8.0"
+validator_derive = "0.8.0"
+
+failure = "0.1.5"
+
+# Tempt fix to use jsonwebtoken v6
+jsonwebtoken = {git = "https://github.com/Keats/jsonwebtoken", branch = "next"}
+
+chrono = { version = "0.4.6", features = ["serde"] }
